@@ -487,6 +487,10 @@ p {
   transition: 1.2s;
 }
 
+.footer-phone-container {
+  display: flex;
+  align-items: center;
+}
 
 .navbar-toggler {
   padding: 0;
@@ -799,6 +803,13 @@ p {
   .slider_content .slider_title {
     font-size: 30px;
   }
+
+
+  .footer-phone-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -824,7 +835,7 @@ p {
 }
 
 .slider_content .main-btn {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 /* ABOUT */
@@ -835,7 +846,7 @@ p {
 
 .about_image {
   width: 48%;
-  height: 100%;
+  height: 106%;
   position: absolute;
   top: 0;
   left: 0;
