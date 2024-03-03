@@ -996,6 +996,7 @@ p {
   display: flex; 
   align-items: top; 
   justify-content: center;
+  flex-wrap: wrap;
 
 }
 
@@ -1031,6 +1032,8 @@ p {
   .single_service .services_content .title {
     font-size: 22px;
   }
+
+
 }
 
 @media (max-width: 767px) {
@@ -1051,4 +1054,218 @@ p {
 .single_service:hover .services_icon i {
   background: #34d399;
   color: #fff;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  padding: 20px 25px;
+  position: absolute;
+  z-index: 1;
+  top: -450px;
+  left: -36%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.149);
+  opacity: 0;
+  transition: ease-in 0.2s;
+  overflow: hidden;
+}
+
+.card1 .tooltiptext {
+  top: -330px;
+}
+
+.card3 .tooltiptext {
+  top: -403px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 50%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent  transparent transparent;
+}
+
+.card-div:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltiptext-bottom {
+  visibility: hidden;
+  width: 500px;
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  padding: 20px 25px;
+  position: relative;
+  z-index: 1;
+  bottom: -30px;
+  left: -45%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.149);
+  opacity: 0;
+  overflow: hidden;
+  transition: ease-in 0.2s;
+}
+
+.tooltiptext-bottom::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 50%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent  transparent white transparent;
+}
+
+.card-div:hover .tooltiptext-bottom {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media (max-width: 1366px) {
+  .tooltiptext {
+    width: 250px;
+    left: -3%;
+  }
+
+  .card1 .tooltiptext {
+    top: -400px;
+  }
+
+  .card2 .tooltiptext {
+    top: -600px;
+  }
+
+  .card3 .tooltiptext {
+    top: -640px;
+  }
+
+  .card4 .tooltiptext {
+    top: -300px;
+  }
+
+  .tooltiptext-bottom {
+    position: absolute;
+    width: 250px;
+    left: -2%;
+  }
+
+  .card5 .tooltiptext-bottom {
+    bottom: -220px;
+  }
+
+  .card6 .tooltiptext-bottom {
+    bottom: -122px;
+  }
+
+  .card7 .tooltiptext-bottom {
+    bottom: -270px;
+  }
+
+  .card8 .tooltiptext-bottom {
+    bottom: -150px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tooltiptext {
+    width: 350px;
+    left: 2%;
+  }
+
+  .tooltiptext-bottom {
+    width: 350px;
+    left: 2%;
+  }
+
+  .card1 .tooltiptext {
+    top: -330px;
+  }
+
+  .card2 .tooltiptext {
+    top: -377px;
+  }
+
+  .card3 .tooltiptext {
+    top: -404px;
+  }
+
+  .card4 .tooltiptext {
+    top: -257px;
+  }
+
+  .card5 .tooltiptext-bottom {
+    bottom: -150px;
+  }
+
+  .card6 .tooltiptext-bottom {
+    bottom: -100px;
+  }
+
+  .card7 .tooltiptext-bottom {
+    bottom: -200px;
+  }
+
+  .card8 .tooltiptext-bottom {
+    bottom: -80px;
+  }  
+
+  .about_wrapper {
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .tooltiptext {
+    width: 350px;
+    left: 5%;
+  }
+
+  .tooltiptext-bottom {
+    position: absolute;
+    width: 350px;
+    left: 5%;
+  }
+
+
+  .card1 .tooltiptext {
+    top: -330px;
+  }
+
+  .card2 .tooltiptext {
+    top: -377px;
+  }
+
+  .card3 .tooltiptext {
+    top: -404px;
+  }
+
+  .card4 .tooltiptext {
+    top: -257px;
+  }
+
+  .card5 .tooltiptext-bottom {
+    bottom: -150px;
+  }
+
+  .card6 .tooltiptext-bottom {
+    bottom: -125px;
+  }
+
+  .card7 .tooltiptext-bottom {
+    bottom: -200px;
+  }
+
+  .card8 .tooltiptext-bottom {
+    bottom: -80px;
+  }
 }
