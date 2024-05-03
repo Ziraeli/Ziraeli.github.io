@@ -492,6 +492,11 @@ p {
   align-items: center;
 }
 
+.footer-address {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-toggler {
   padding: 0;
   color: #fff;
@@ -806,6 +811,12 @@ p {
 
 
   .footer-phone-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-address {
     display: flex;
     align-items: center;
     flex-direction: column;
